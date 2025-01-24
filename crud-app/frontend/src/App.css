@@ -1,0 +1,126 @@
+/* Menghapus margin dan padding default pada semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mengatur layout halaman untuk menempatkan konten di tengah */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  display: flex;
+  justify-content: center; /* Menempatkan elemen secara horizontal di tengah */
+  align-items: center;     /* Menempatkan elemen secara vertikal di tengah */
+  height: 100vh;           /* Mengatur tinggi halaman penuh */
+  color: #333;
+  margin: 0;
+}
+
+/* Kontainer utama yang membungkus semua elemen */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 90%;              /* Lebar kontainer 90% dari lebar layar */
+  max-width: 900px;        /* Maksimum lebar kontainer adalah 900px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Judul utama */
+h1, h2 {
+  color: #007BFF; /* Warna biru untuk judul */
+  margin-bottom: 20px;
+}
+
+/* Styling tombol */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling tombol Hapus */
+button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+/* Tabel styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Form input styling */
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Logout button */
+button.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f04e30;
+  font-size: 14px;
+}
+
+button.logout:hover {
+  background-color: #d73826;
+}
+
+/* Styling tabel baris genap */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styling tabel baris ganjil */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
